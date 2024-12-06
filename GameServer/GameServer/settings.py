@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'game',
+    'Shop',
     'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
