@@ -11,7 +11,6 @@ def get_all_Crr_Types(request):
     allCurrencies = GameCurrency.objects.all()
     jsonData = GameCurrencySerializer(allCurrencies, many=True)
 
-    for crr in allCurrencies:
-        print(crr.currencyName)
+    print(jsonData.data)
 
     return Response(jsonData.data)
